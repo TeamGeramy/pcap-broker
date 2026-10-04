@@ -1,6 +1,6 @@
 services:
   pcap-broker:
-    buold: .
+    build: .
     container_name: pcap-broker
     restart: always
     environment:
