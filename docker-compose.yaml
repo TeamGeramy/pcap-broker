@@ -7,7 +7,5 @@ services:
       PCAP_COMMAND: |-
         tcpdump -U --immediate-mode -ni kmob0 -s 65535 -w - portrange 9000-9999
 
-      # Bind on 0.0.0.0 port 4242. From within the same Docker network you can reach it using the `container_name`
-      # For example in another Docker service you can reach this pcap-broker using `pcap-broker-remote-host:4242`
       LISTEN_ADDRESS: "0.0.0.0:65000"
     network_mode: host
